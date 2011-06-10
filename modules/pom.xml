@@ -7,6 +7,7 @@
 	<packaging>pom</packaging>
 	<version>1.1.0-SNAPSHOT</version>
 	<name>RecordShop</name>
+	<url>http://johanvogelzang.github.com/WebShop</url>
 	<properties>
 		<mod4j.version>1.3.0</mod4j.version>
 		<spring.version>2.5</spring.version>
@@ -18,6 +19,18 @@
 		<connection>scm:git:git@github.com:johanvogelzang/WebShop.git</connection>
 		<developerConnection>scm:git:git@github.com:johanvogelzang/WebShop.git</developerConnection>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>webshop-repo</id>
+			<name>The WebShop Maven repo</name>
+			<url>file:${user.home}/webshop/maven-repo</url>
+		</repository>
+		<site>
+			<id>webshop-site</id>
+			<name>The WebShop website</name>
+			<url>file:${user.home}/webshop/website</url>
+		</site>
+	</distributionManagement>
 	<modules>
 		<module>RecordShop-domain</module>
 		<module>RecordShop-data</module>
@@ -86,6 +99,12 @@
 					<source>1.5</source>
 					<target>1.5</target>
 				</configuration>
+			</plugin>
+			<!-- New Maven3 style report configuratian -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.0-beta-3</version>
 			</plugin>
 		</plugins>
 		<pluginManagement>
