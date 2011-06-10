@@ -1,0 +1,7 @@
+application RecordShopApp;
+
+from MaintainRecords process showAllRecords; 
+
+application [  
+    showAllRecords label "Maintain Records" ;    
+]  
