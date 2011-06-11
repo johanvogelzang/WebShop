@@ -1,3 +1,5 @@
 /target
 /derby.log
 /.settings
+/.project
+/.classpath
