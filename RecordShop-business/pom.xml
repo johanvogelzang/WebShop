@@ -50,5 +50,10 @@
             <artifactId>RecordShop-data</artifactId>
             <version>1.1.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+        	<groupId>javax.transaction</groupId>
+        	<artifactId>jta</artifactId>
+        	<scope>test</scope>
+        </dependency>
     </dependencies>
 </project>

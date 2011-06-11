@@ -20,10 +20,22 @@
         <dependency>
             <groupId>org.mod4j</groupId>
             <artifactId>mod4j-runtime-common</artifactId>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>hibernate</artifactId>
+            		<groupId>org.hibernate</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time-hibernate</artifactId>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>hibernate</artifactId>
+            		<groupId>org.hibernate</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
