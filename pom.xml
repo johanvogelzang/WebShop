@@ -4,7 +4,7 @@
 	<groupId>org.company.recordshop</groupId>
 	<artifactId>RecordShop</artifactId>
 	<packaging>pom</packaging>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.3</version>
 	<name>RecordShop</name>
 	<url>http://johanvogelzang.github.com/WebShop</url>
 	<properties>
