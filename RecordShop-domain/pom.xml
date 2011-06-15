@@ -4,13 +4,13 @@
     <parent>
         <groupId>org.company.recordshop</groupId>
         <artifactId>RecordShop</artifactId>
-        <version>1.3</version>
+        <version>1.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.company.recordshop.domain</groupId>
     <artifactId>RecordShop-domain</artifactId>
     <name>RecordShop-domain</name>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
