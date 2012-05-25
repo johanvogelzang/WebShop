@@ -10,7 +10,6 @@
     <groupId>org.company.recordshop.domain</groupId>
     <artifactId>RecordShop-domain</artifactId>
     <name>RecordShop-domain</name>
-    <version>1.5-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
