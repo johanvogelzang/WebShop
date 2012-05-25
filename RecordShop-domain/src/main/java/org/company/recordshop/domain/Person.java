@@ -5,7 +5,6 @@
 package org.company.recordshop.domain;
 
 import org.joda.time.DateTime;
-import org.joda.time.Interval;
 import org.joda.time.Years;
 
 /**

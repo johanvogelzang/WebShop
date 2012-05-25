@@ -10,11 +10,8 @@
 
 package org.company.recordshop.domain.businessrules;
 
-import org.springframework.validation.Errors;
-import org.springframework.validation.ValidationUtils;
-import org.springframework.validation.Validator;
-
 import org.company.recordshop.domain.Customer;
+import org.springframework.validation.Validator;
 
 /**
  * Just another rule

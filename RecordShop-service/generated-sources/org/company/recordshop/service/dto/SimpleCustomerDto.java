@@ -10,15 +10,11 @@
 
 package org.company.recordshop.service.dto;
 
-import org.mod4j.runtime.dto.AbstractDto;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.joda.time.DateTime;
-
-import java.util.Set;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
+import org.mod4j.runtime.dto.AbstractDto;
 
 /**
  * A simple Customer transfer object with a subset of Customer attributes.

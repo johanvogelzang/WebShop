@@ -3,7 +3,6 @@ package org.company.recordshop.service.dto.translators;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import org.company.recordshop.service.AbstractServiceTestCase;
 import org.company.recordshop.service.dto.ArtistDto;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,12 +2,9 @@ package org.company.recordshop;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
-import java.util.Collections;
 import java.util.List;
 
-import org.company.recordshop.CustomerDaoTest.CustomerComparator;
 import org.company.recordshop.data.CustomerDao;
 import org.company.recordshop.domain.Customer;
 import org.company.recordshop.domain.CustomerExample;

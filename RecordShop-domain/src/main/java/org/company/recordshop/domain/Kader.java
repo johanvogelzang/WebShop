@@ -10,7 +10,6 @@
 
 package org.company.recordshop.domain;
 
-import org.joda.time.DateTime;
 import org.mod4j.runtime.exception.BusinessRuleException;
 import org.springframework.util.ClassUtils;
 import org.springframework.validation.BindException;

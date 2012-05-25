@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.Many2ManyFromDaoBase;
 import org.company.recordshop.domain.Many2ManyFrom;
 import org.company.recordshop.domain.Many2ManyFromExample;
-import org.company.recordshop.data.Many2ManyFromDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

@@ -10,13 +10,10 @@
 
 package org.company.recordshop.service.dto;
 
-import org.mod4j.runtime.dto.AbstractDto;
-
-import java.util.Set;
-import java.util.HashSet;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
+
+import org.mod4j.runtime.dto.AbstractDto;
 
 /**
  * 

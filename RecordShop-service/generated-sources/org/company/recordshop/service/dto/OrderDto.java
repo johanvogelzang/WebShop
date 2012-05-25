@@ -10,9 +10,8 @@
 
 package org.company.recordshop.service.dto;
 
-import org.mod4j.runtime.dto.AbstractDto;
-
 import org.joda.time.DateTime;
+import org.mod4j.runtime.dto.AbstractDto;
 
 /**
  * Full Order transfer object, containing all the Order attributes (no associations)

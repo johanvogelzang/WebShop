@@ -2,7 +2,6 @@ package org.company.recordshop;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import org.company.recordshop.data.DerivedDao;
 import org.company.recordshop.domain.Derived;

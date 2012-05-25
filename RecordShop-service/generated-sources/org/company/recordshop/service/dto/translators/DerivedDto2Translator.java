@@ -12,13 +12,12 @@ package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
+
 import org.company.recordshop.domain.Derived;
 import org.company.recordshop.domain.DerivedExample;
 import org.company.recordshop.service.dto.DerivedDto2;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating Derived domain objects from- and to DerivedDto2 data transfer objects. 

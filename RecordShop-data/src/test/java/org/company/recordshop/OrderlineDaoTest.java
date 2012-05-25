@@ -1,7 +1,7 @@
 package org.company.recordshop;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.company.recordshop.data.OrderLineDao;
 import org.company.recordshop.domain.OrderLine;

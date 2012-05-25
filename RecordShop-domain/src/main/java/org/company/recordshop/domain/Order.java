@@ -4,7 +4,6 @@
  */
 package org.company.recordshop.domain;
 
-import org.joda.time.DateTime;
 
 /**
  * An Order represents the agreement between a Customer and the RecordShop about one or more purchased Records.

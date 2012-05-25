@@ -12,21 +12,14 @@ package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
+
+import org.company.recordshop.data.PersonDao;
+import org.company.recordshop.domain.Person;
 import org.company.recordshop.domain.Relation;
 import org.company.recordshop.domain.RelationExample;
 import org.company.recordshop.service.dto.RelationDto;
-import org.company.recordshop.domain.Person;
-import org.company.recordshop.service.dto.PersonDto;
-import org.company.recordshop.domain.Person;
-import org.company.recordshop.service.dto.PersonDto;
-
-import org.company.recordshop.data.PersonDao;
-
-import org.company.recordshop.data.PersonDao;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating Relation domain objects from- and to RelationDto data transfer objects. 

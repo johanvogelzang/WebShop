@@ -12,13 +12,12 @@ package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
+
 import org.company.recordshop.domain.CasusOverleg;
 import org.company.recordshop.domain.CasusOverlegExample;
 import org.company.recordshop.service.dto.CasusOverlegDto;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating CasusOverleg domain objects from- and to CasusOverlegDto data transfer objects. 

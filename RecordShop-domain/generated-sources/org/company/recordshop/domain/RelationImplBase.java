@@ -10,21 +10,9 @@
 
 package org.company.recordshop.domain;
 
-import org.mod4j.runtime.validation.BusinessRuleValidationSupport;
-
-import java.util.Collections;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ArrayList;
-import org.mod4j.runtime.validation.MinValueValidator;
-import org.mod4j.runtime.validation.MaxValueValidator;
-import org.mod4j.runtime.validation.MinLengthValidator;
-import org.mod4j.runtime.validation.MaxLengthValidator;
-import org.mod4j.runtime.validation.NotNullValidator;
-import org.mod4j.runtime.validation.RegExpValidator;
-
 import org.joda.time.DateTime;
+import org.mod4j.runtime.validation.BusinessRuleValidationSupport;
+import org.mod4j.runtime.validation.NotNullValidator;
 
 /**
  * 

@@ -1,10 +1,6 @@
 package org.company.recordshop;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
-
-import java.util.Comparator;
 
 import org.company.recordshop.data.CustomerDao;
 import org.company.recordshop.domain.Customer;

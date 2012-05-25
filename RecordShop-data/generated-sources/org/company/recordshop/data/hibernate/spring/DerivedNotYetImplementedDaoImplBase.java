@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.DerivedNotYetImplementedDaoBase;
 import org.company.recordshop.domain.DerivedNotYetImplemented;
 import org.company.recordshop.domain.DerivedNotYetImplementedExample;
-import org.company.recordshop.data.DerivedNotYetImplementedDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

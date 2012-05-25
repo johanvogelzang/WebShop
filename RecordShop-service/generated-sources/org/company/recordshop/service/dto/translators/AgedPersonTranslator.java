@@ -12,13 +12,12 @@ package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
+
 import org.company.recordshop.domain.Person;
 import org.company.recordshop.domain.PersonExample;
 import org.company.recordshop.service.dto.AgedPerson;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating Person domain objects from- and to AgedPerson data transfer objects. 

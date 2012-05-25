@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.RelationDaoBase;
 import org.company.recordshop.domain.Relation;
 import org.company.recordshop.domain.RelationExample;
-import org.company.recordshop.data.RelationDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

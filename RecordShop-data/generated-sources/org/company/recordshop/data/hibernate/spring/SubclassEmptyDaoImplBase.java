@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.SubclassEmptyDaoBase;
 import org.company.recordshop.domain.SubclassEmpty;
 import org.company.recordshop.domain.SubclassEmptyExample;
-import org.company.recordshop.data.SubclassEmptyDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

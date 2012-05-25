@@ -12,17 +12,14 @@ package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
-import org.company.recordshop.domain.OrderLine;
-import org.company.recordshop.domain.OrderLineExample;
-import org.company.recordshop.service.dto.OrderlineWithRecordRefsDto;
-import org.company.recordshop.domain.Product;
-import org.company.recordshop.service.dto.FullProductDto;
 
 import org.company.recordshop.data.ProductDao;
+import org.company.recordshop.domain.OrderLine;
+import org.company.recordshop.domain.OrderLineExample;
+import org.company.recordshop.domain.Product;
+import org.company.recordshop.service.dto.OrderlineWithRecordRefsDto;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating OrderLine domain objects from- and to OrderlineWithRecordRefsDto data transfer objects. 

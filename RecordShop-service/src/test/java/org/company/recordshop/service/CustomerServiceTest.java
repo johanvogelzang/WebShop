@@ -2,7 +2,6 @@ package org.company.recordshop.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import org.company.recordshop.service.dto.FullCustomerDto;
 import org.company.recordshop.service.dto.SimpleCustomerDto;
@@ -10,7 +9,6 @@ import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mod4j.runtime.exception.BusinessRuleException;
-import org.mod4j.runtime.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.ExpectedException;
 import org.springframework.test.annotation.Rollback;

@@ -10,63 +10,43 @@
 
 package org.company.recordshop.service;
 
-import java.util.List;
 import java.util.ArrayList;
-import org.springframework.util.Assert;
+import java.util.List;
 
 import org.company.recordshop.business.CustomerServiceModelDomainService;
-
-import org.company.recordshop.service.dto.SimpleCustomerDto;
-import org.company.recordshop.service.dto.UniqueCustomerDto;
-import org.company.recordshop.service.dto.StringDto;
-import org.company.recordshop.service.dto.FullCustomerDto;
-import org.company.recordshop.service.dto.OrderDto;
-import org.company.recordshop.service.dto.OrderNumberAndDateDto;
-import org.company.recordshop.service.dto.OrderWithOrderLinesDto;
-import org.company.recordshop.service.dto.OrderLineDto;
-import org.company.recordshop.service.dto.CustomerWithOrdersAndOrderLines;
-import org.company.recordshop.service.dto.ProductWithCustomersDto;
-import org.company.recordshop.service.dto.FullProductDto;
-import org.company.recordshop.service.dto.ArtistDto;
-import org.company.recordshop.service.dto.PersonDto;
-import org.company.recordshop.service.dto.RelationDto;
-
-import org.company.recordshop.service.dto.translators.SimpleCustomerDtoTranslator;
-import org.company.recordshop.domain.Customer;
-import org.company.recordshop.domain.CustomerExample;
-import org.company.recordshop.service.dto.translators.FullCustomerDtoTranslator;
-import org.company.recordshop.domain.Customer;
-import org.company.recordshop.domain.CustomerExample;
-import org.company.recordshop.service.dto.translators.OrderDtoTranslator;
-import org.company.recordshop.domain.Order;
-import org.company.recordshop.domain.OrderExample;
-import org.company.recordshop.service.dto.translators.OrderNumberAndDateDtoTranslator;
-import org.company.recordshop.domain.Order;
-import org.company.recordshop.domain.OrderExample;
-import org.company.recordshop.service.dto.translators.OrderWithOrderLinesDtoTranslator;
-import org.company.recordshop.domain.Order;
-import org.company.recordshop.domain.OrderExample;
-import org.company.recordshop.service.dto.translators.OrderLineDtoTranslator;
-import org.company.recordshop.domain.OrderLine;
-import org.company.recordshop.domain.OrderLineExample;
-import org.company.recordshop.service.dto.translators.CustomerWithOrdersAndOrderLinesTranslator;
-import org.company.recordshop.domain.Customer;
-import org.company.recordshop.domain.CustomerExample;
-import org.company.recordshop.service.dto.translators.ProductWithCustomersDtoTranslator;
-import org.company.recordshop.domain.Product;
-import org.company.recordshop.domain.ProductExample;
-import org.company.recordshop.service.dto.translators.FullProductDtoTranslator;
-import org.company.recordshop.domain.Product;
-import org.company.recordshop.domain.ProductExample;
-import org.company.recordshop.service.dto.translators.ArtistDtoTranslator;
 import org.company.recordshop.domain.Artist;
-import org.company.recordshop.domain.ArtistExample;
-import org.company.recordshop.service.dto.translators.PersonDtoTranslator;
+import org.company.recordshop.domain.Customer;
+import org.company.recordshop.domain.CustomerExample;
+import org.company.recordshop.domain.Order;
+import org.company.recordshop.domain.OrderLine;
 import org.company.recordshop.domain.Person;
 import org.company.recordshop.domain.PersonExample;
-import org.company.recordshop.service.dto.translators.RelationDtoTranslator;
+import org.company.recordshop.domain.Product;
 import org.company.recordshop.domain.Relation;
-import org.company.recordshop.domain.RelationExample;
+import org.company.recordshop.service.dto.ArtistDto;
+import org.company.recordshop.service.dto.CustomerWithOrdersAndOrderLines;
+import org.company.recordshop.service.dto.FullCustomerDto;
+import org.company.recordshop.service.dto.FullProductDto;
+import org.company.recordshop.service.dto.OrderDto;
+import org.company.recordshop.service.dto.OrderLineDto;
+import org.company.recordshop.service.dto.OrderNumberAndDateDto;
+import org.company.recordshop.service.dto.PersonDto;
+import org.company.recordshop.service.dto.ProductWithCustomersDto;
+import org.company.recordshop.service.dto.RelationDto;
+import org.company.recordshop.service.dto.SimpleCustomerDto;
+import org.company.recordshop.service.dto.translators.ArtistDtoTranslator;
+import org.company.recordshop.service.dto.translators.CustomerWithOrdersAndOrderLinesTranslator;
+import org.company.recordshop.service.dto.translators.FullCustomerDtoTranslator;
+import org.company.recordshop.service.dto.translators.FullProductDtoTranslator;
+import org.company.recordshop.service.dto.translators.OrderDtoTranslator;
+import org.company.recordshop.service.dto.translators.OrderLineDtoTranslator;
+import org.company.recordshop.service.dto.translators.OrderNumberAndDateDtoTranslator;
+import org.company.recordshop.service.dto.translators.OrderWithOrderLinesDtoTranslator;
+import org.company.recordshop.service.dto.translators.PersonDtoTranslator;
+import org.company.recordshop.service.dto.translators.ProductWithCustomersDtoTranslator;
+import org.company.recordshop.service.dto.translators.RelationDtoTranslator;
+import org.company.recordshop.service.dto.translators.SimpleCustomerDtoTranslator;
+import org.springframework.util.Assert;
 
 /**
  * @author Generated by Mod4j

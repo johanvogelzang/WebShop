@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.CasusOverlegDaoBase;
 import org.company.recordshop.domain.CasusOverleg;
 import org.company.recordshop.domain.CasusOverlegExample;
-import org.company.recordshop.data.CasusOverlegDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

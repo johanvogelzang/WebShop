@@ -1,7 +1,5 @@
 package org.company.recordshop.service.dto.translators;
 
-import static org.junit.Assert.fail;
-
 import java.lang.reflect.Field;
 
 import org.company.recordshop.domain.Customer;

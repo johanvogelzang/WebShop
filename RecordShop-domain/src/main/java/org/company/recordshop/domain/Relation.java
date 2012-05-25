@@ -11,7 +11,6 @@
 
 package org.company.recordshop.domain;
 
-import org.joda.time.DateTime;
 
 /**
  * 

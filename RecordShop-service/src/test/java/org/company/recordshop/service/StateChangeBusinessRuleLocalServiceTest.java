@@ -1,8 +1,5 @@
 package org.company.recordshop.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import org.company.recordshop.service.dto.CasusOverlegDto;
 import org.company.recordshop.service.dto.KaderDto;
 import org.company.recordshop.service.dto.OrganisatieDto;

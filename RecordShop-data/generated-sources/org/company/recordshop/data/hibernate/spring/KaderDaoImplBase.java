@@ -13,10 +13,9 @@ package org.company.recordshop.data.hibernate.spring;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.company.recordshop.data.KaderDaoBase;
 import org.company.recordshop.domain.Kader;
 import org.company.recordshop.domain.KaderExample;
-import org.company.recordshop.data.KaderDaoBase;
-
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

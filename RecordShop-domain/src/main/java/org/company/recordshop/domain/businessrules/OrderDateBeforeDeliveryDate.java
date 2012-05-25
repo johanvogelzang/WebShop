@@ -5,7 +5,6 @@
 package org.company.recordshop.domain.businessrules;
 
 import org.company.recordshop.domain.Order;
-import org.joda.time.DateTime;
 import org.springframework.validation.Errors;
 
 /**

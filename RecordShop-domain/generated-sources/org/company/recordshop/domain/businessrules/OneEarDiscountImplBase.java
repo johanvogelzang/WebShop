@@ -10,11 +10,8 @@
 
 package org.company.recordshop.domain.businessrules;
 
-import org.springframework.validation.Errors;
-import org.springframework.validation.ValidationUtils;
-import org.springframework.validation.Validator;
-
 import org.company.recordshop.domain.Customer;
+import org.springframework.validation.Validator;
 
 /**
  * If Customer has one ear, he/she get a discount of 50 percent.
