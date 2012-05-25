@@ -10,7 +10,6 @@
     <groupId>org.company.recordshop.service</groupId>
     <artifactId>RecordShop-service</artifactId>
     <name>RecordShop-service</name>
-    <version>1.5-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -65,7 +64,6 @@
 		<dependency>
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
-			<version>1.1</version>
 			<type>jar</type>
 			<scope>test</scope>
 		</dependency>

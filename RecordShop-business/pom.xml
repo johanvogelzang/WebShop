@@ -18,7 +18,6 @@
     <groupId>org.company.recordshop.business</groupId>
     <artifactId>RecordShop-business</artifactId>
     <name>RecordShop-business</name>
-    <version>1.5-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
