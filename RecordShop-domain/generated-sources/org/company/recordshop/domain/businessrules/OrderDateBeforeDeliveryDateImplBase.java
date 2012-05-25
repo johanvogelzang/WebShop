@@ -23,8 +23,7 @@ public abstract class OrderDateBeforeDeliveryDateImplBase implements Validator {
 	/**
 	 * {@inheritDoc}
 	 */
-	@SuppressWarnings("unchecked")
-	public boolean supports(Class clazz) {
+	public boolean supports(@SuppressWarnings("rawtypes") Class clazz) {
 		return Order.class.isAssignableFrom(clazz);
 	}
 }
