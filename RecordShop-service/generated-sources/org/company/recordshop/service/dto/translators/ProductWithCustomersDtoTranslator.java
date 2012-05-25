@@ -11,18 +11,18 @@
 package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
+
+import org.company.recordshop.data.CustomerDao;
+import org.company.recordshop.domain.Customer;
 import org.company.recordshop.domain.Product;
 import org.company.recordshop.domain.ProductExample;
 import org.company.recordshop.service.dto.ProductWithCustomersDto;
-import org.company.recordshop.domain.Customer;
 import org.company.recordshop.service.dto.SimpleCustomerDto;
-
-import org.company.recordshop.data.CustomerDao;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating Product domain objects from- and to ProductWithCustomersDto data transfer objects. 

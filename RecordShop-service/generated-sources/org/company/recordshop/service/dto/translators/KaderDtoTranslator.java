@@ -11,18 +11,18 @@
 package org.company.recordshop.service.dto.translators;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
-import org.springframework.util.Assert;
-import org.mod4j.runtime.exception.ConcurrentUpdateException;
-import org.company.recordshop.domain.Kader;
-import org.company.recordshop.domain.KaderExample;
-import org.company.recordshop.service.dto.KaderDto;
-import org.company.recordshop.domain.Organisatie;
-import org.company.recordshop.service.dto.OrganisatieDto;
 
 import org.company.recordshop.data.OrganisatieDao;
+import org.company.recordshop.domain.Kader;
+import org.company.recordshop.domain.KaderExample;
+import org.company.recordshop.domain.Organisatie;
+import org.company.recordshop.service.dto.KaderDto;
+import org.company.recordshop.service.dto.OrganisatieDto;
+import org.mod4j.runtime.exception.ConcurrentUpdateException;
+import org.springframework.util.Assert;
 
 /**
  * Translator for translating Kader domain objects from- and to KaderDto data transfer objects. 
