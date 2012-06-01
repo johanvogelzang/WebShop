@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.company.webshop</groupId>
 	<artifactId>WebShop</artifactId>
@@ -31,6 +32,10 @@
 			<url>file:${user.home}/webshop/website</url>
 		</site>
 	</distributionManagement>
+	<issueManagement>
+		<system>Issues at GitHub</system>
+		<url>https://github.com/johanvogelzang/WebShop/issues</url>
+	</issueManagement>
 	<modules>
 		<module>WebShop-domain</module>
 		<module>WebShop-data</module>
@@ -113,7 +118,8 @@
 					<artifactId>mod4j-maven-plugin</artifactId>
 					<version>${mod4j.version}</version>
 				</plugin>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
