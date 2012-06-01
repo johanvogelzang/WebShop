@@ -4,13 +4,13 @@
     <parent>
         <groupId>org.company.webshop</groupId>
         <artifactId>WebShop</artifactId>
-        <version>1.6-SNAPSHOT</version>
+        <version>1.6</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.company.webshop.data</groupId>
     <artifactId>WebShop-data</artifactId>
     <name>WebShop-data</name>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.6</version>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.company.webshop.domain</groupId>
             <artifactId>WebShop-domain</artifactId>
-            <version>1.6-SNAPSHOT</version>
+            <version>1.6</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
