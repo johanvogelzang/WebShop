@@ -4,7 +4,7 @@
 	<groupId>org.company.webshop</groupId>
 	<artifactId>WebShop</artifactId>
 	<packaging>pom</packaging>
-	<version>1.7</version>
+	<version>1.8-SNAPSHOT</version>
 	<name>WebShop application</name>
 	<url>http://johanvogelzang.github.com/WebShop</url>
 	<properties>
