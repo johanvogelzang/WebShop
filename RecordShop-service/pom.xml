@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.company.recordshop</groupId>
         <artifactId>RecordShop</artifactId>
-        <version>1.5-SNAPSHOT</version>
+        <version>1.5</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.company.recordshop.service</groupId>
@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.company.recordshop.business</groupId>
             <artifactId>RecordShop-business</artifactId>
-            <version>1.5-SNAPSHOT</version>
+            <version>1.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.easymock</groupId>
