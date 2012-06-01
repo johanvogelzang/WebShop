@@ -1,7 +1,0 @@
-service Records;
-
-from RecordShopDataContract import FullRecordDto;
-
-crud FullRecordDto;
-listall listRecords for FullRecordDto;
-find findRecords for FullRecordDto;

@@ -1,0 +1,29 @@
+"The WebShop Order Service Model. Contains all services for handling and maintaining Orders"
+service OrderServiceModel ;
+
+from WebShopDataContract import OrderDto;
+from WebShopDataContract import SimpleCustomerDto;
+//from WebShopDataContract import OrderNumberAndDateList;
+from WebShopDataContract import DateDto;
+from WebShopDataContract import OrderNumberAndDateDto ;
+from WebShopDataContract import OrderWithOrderLinesDto ;
+from WebShopDataContract import OrderLineDto ;
+  
+read   readCustomerAAA  for SimpleCustomerDto ;  
+  
+/* 
+ * Create, read, update and delete services
+ */
+crud OrderDto ;
+crud OrderNumberAndDateDto ;  
+crud OrderWithOrderLinesDto;
+//for OrderWithOrderLinesDto reference orderLines add OrderLineDto;
+   
+"Find all Orders for a specific Customer" 
+method findOrdersByCustomer in ( SimpleCustomerDto customer )
+                            out list OrderNumberAndDateDto;
+
+"Find all orders for a given date" 
+method findOrdersByDate in ( DateDto date )
+                        out list OrderNumberAndDateDto;
+

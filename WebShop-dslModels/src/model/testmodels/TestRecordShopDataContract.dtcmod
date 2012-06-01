@@ -1,0 +1,6 @@
+"The WebShop data contract."
+datacontract TestWebShopDataContract  ; 
+
+from TestDomainModel import Derived;
+
+class DerivedDto2 represents Derived;   
