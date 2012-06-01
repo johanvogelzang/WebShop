@@ -15,7 +15,7 @@
         <version>1.7-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.company.webshop.business</groupId>
+    <groupId>org.company.webshop</groupId>
     <artifactId>WebShop-business</artifactId>
     <name>WebShop-business</name>
     <dependencies>
@@ -45,7 +45,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.company.webshop.data</groupId>
+            <groupId>org.company.webshop</groupId>
             <artifactId>WebShop-data</artifactId>
             <version>1.7-SNAPSHOT</version>
         </dependency>

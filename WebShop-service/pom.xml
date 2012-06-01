@@ -7,7 +7,7 @@
         <version>1.7-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.company.webshop.service</groupId>
+    <groupId>org.company.webshop</groupId>
     <artifactId>WebShop-service</artifactId>
     <name>WebShop-service</name>
     <dependencies>
@@ -52,7 +52,7 @@
 			<artifactId>mod4j-runtime-common</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.company.webshop.business</groupId>
+            <groupId>org.company.webshop</groupId>
             <artifactId>WebShop-business</artifactId>
             <version>1.7-SNAPSHOT</version>
 		</dependency>

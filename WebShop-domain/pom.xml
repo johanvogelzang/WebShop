@@ -7,7 +7,7 @@
         <version>1.7-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.company.webshop.domain</groupId>
+    <groupId>org.company.webshop</groupId>
     <artifactId>WebShop-domain</artifactId>
     <name>WebShop-domain</name>
     <dependencies>
