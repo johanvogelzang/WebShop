@@ -1,7 +1,0 @@
-application WebShopApp;
-
-from MaintainRecords process showAllRecords; 
-
-application [  
-    showAllRecords label "Maintain Records" ;    
-]  
