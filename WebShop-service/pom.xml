@@ -7,7 +7,6 @@
 		<version>1.9-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.company.webshop</groupId>
 	<artifactId>WebShop-service</artifactId>
 	<name>WebShop-service</name>
 	<dependencies>
