@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.company.webshop</groupId>
 		<artifactId>WebShop</artifactId>
-		<version>1.9</version>
+		<version>1.10-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>WebShop-service</artifactId>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>org.company.webshop</groupId>
 			<artifactId>WebShop-business</artifactId>
-			<version>1.9</version>
+			<version>1.10-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.easymock</groupId>
