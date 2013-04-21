@@ -1,0 +1,13 @@
+
+
+description = 'WebShop-business'
+
+dependencies {
+	compile project(':WebShop-data')
+	testCompile libraries.junit
+	testCompile group: 'org.easymock', name: 'easymock', version:'2.4'
+	testCompile group: 'org.apache.derby', name: 'derby', version:'10.2.2.0'
+	testCompile group: 'commons-dbcp', name: 'commons-dbcp', version:'1.2'
+	testCompile group: 'org.springframework', name: 'spring-test', version:'2.5'
+	testCompile group: 'javax.transaction', name: 'jta', version:'1.1'
+}

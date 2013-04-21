@@ -1,0 +1,12 @@
+
+
+description = 'WebShop-domain'
+
+dependencies {
+	compile(group: 'org.mod4j', name: 'mod4j-runtime-common', version:'1.3.0') { exclude(module: 'hibernate') }
+	compile(group: 'joda-time', name: 'joda-time-hibernate', version:'1.0') { exclude(module: 'hibernate') }
+	compile group: 'org.springframework', name: 'spring-context', version:'2.5'
+	compile group: 'joda-time', name: 'joda-time', version:'1.5.2'
+	compile group: 'commons-lang', name: 'commons-lang', version:'2.4'
+	testCompile libraries.junit
+}

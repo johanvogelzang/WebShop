@@ -1,0 +1,25 @@
+allprojects  {
+	apply plugin: 'maven'
+	group = 'org.company.webshop'
+	version = '1.10-SNAPSHOT'
+}
+
+subprojects {
+	apply plugin: 'java'
+	sourceCompatibility = 1.5
+	targetCompatibility = 1.5
+
+	repositories {
+		mavenRepo url: "http://repo.maven.apache.org/maven2"
+	}
+
+	sourceSets {
+		main { java { srcDirs "generated-sources" } }
+	}
+}
+
+// Gradle alternative for Maven's <dependencyManagement>
+ext.libraries = [
+	junit: "junit:junit:4.4",
+	jodatime: "joda-time:joda-time:1.5.2"
+]

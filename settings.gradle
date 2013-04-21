@@ -1,0 +1,8 @@
+rootProject.name = 'WebShop'
+
+include ':WebShop-domain', ':WebShop-data', ':WebShop-business', ':WebShop-service'
+
+project(':WebShop-domain').projectDir = "$rootDir/WebShop-domain" as File
+project(':WebShop-data').projectDir = "$rootDir/WebShop-data" as File
+project(':WebShop-business').projectDir = "$rootDir/WebShop-business" as File
+project(':WebShop-service').projectDir = "$rootDir/WebShop-service" as File
