@@ -15,6 +15,18 @@ subprojects {
 	sourceSets {
 		main { java { srcDirs "generated-sources" } }
 	}
+	
+	uploadArchives {
+		repositories {
+			mavenDeployer {
+				def userHome = System.getProperty('user.home')
+				repository(url: "file:${userHome}/tmp/releases") {
+				}
+				snapshotRepository(url: "file:${userHome}/tmp/snapshots") {
+				}
+			}
+		}
+	}
 }
 
 // Gradle's alternative for Maven's <dependencyManagement>
@@ -23,8 +35,8 @@ ext.libraries = [
 	jodatime: "joda-time:joda-time:1.5.2"
 ]
 
-reportsDir = new File("build/reports")
-compileDepsPng = file("$reportsDir/compileDeps.png")
+ext.reportsDir = new File("build/reports")
+ext.compileDepsPng = file("$reportsDir/compileDeps.png")
 
 task dependenciesPng() {
 	inputs.files subprojects.configurations.compile
