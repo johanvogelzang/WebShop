@@ -1,0 +1,37 @@
+// Company standards and conventions
+subprojects {
+	repositories { mavenRepo url: "http://repo.maven.apache.org/maven2" }
+	sourceSets {
+		main { java { srcDirs "generated-sources" } }
+	}
+}
+
+reportsDir = new File("build/reports")
+compileDepsPng = file("$reportsDir/compileDeps.png")
+
+task dependenciesPng() {
+	inputs.files subprojects.configurations.compile
+	outputs.files compileDepsPng
+	doFirst {
+		if(compileDepsPng.exists()) compileDepsPng.delete()
+		if(!reportsDir.exists()) reportsDir.mkdirs()
+
+	}
+	doLast {
+		def dotGraph = "digraph Compile{"
+		subprojects.each {subproject ->
+			subproject.configurations.compile.dependencies.each {dependency ->
+				//if(dependency instanceof ProjectDependency) {
+					dotGraph += "\"$subproject.name\" -> \"$dependency.name\""
+				//}
+			}
+		}
+		dotGraph += "}"
+		def chartParams = [cht: 'gv', chof: 'png', chl: dotGraph]
+		def url = "http://chart.googleapis.com/chart?"
+		url += chartParams.collect {k,v -> "$k=${URLEncoder.encode(v, 'UTF-8')}"}.join('&')
+		compileDepsPng.withOutputStream{out ->
+			out << new URL(url).openStream()
+		}
+	}
+}
