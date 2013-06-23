@@ -20,9 +20,9 @@ subprojects {
 		repositories {
 			mavenDeployer {
 				def userHome = System.getProperty('user.home')
-				repository(url: "file:${userHome}/tmp/releases") {
+				repository(url: "file:$userHome/tmp/releases") {
 				}
-				snapshotRepository(url: "file:${userHome}/tmp/snapshots") {
+				snapshotRepository(url: "file:$userHome/tmp/snapshots") {
 				}
 			}
 		}
