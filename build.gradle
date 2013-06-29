@@ -14,8 +14,18 @@ subprojects {
 		main { java { srcDirs "generated-sources"
 			} }
 	}
-
 	
+	uploadArchives {
+		repositories {
+			mavenDeployer {
+				def userHome = System.getProperty('user.home')
+				repository(url: "file:$userHome/tmp/releases") {
+				}
+				snapshotRepository(url: "file:$userHome/tmp/snapshots") {
+				}
+			}
+		}
+	}
 }
 
 buildscript {
@@ -26,17 +36,6 @@ buildscript {
 apply plugin: 'release'
 createReleaseTag.dependsOn uploadArchives
 
-uploadArchives {
-	repositories {
-		mavenDeployer {
-			def userHome = System.getProperty('user.home')
-			repository(url: "file:$userHome/tmp/releases") {
-			}
-			snapshotRepository(url: "file:$userHome/tmp/snapshots") {
-			}
-		}
-	}
-}
 
 // Gradle's alternative for Maven's <dependencyManagement>
 ext.libraries = [
