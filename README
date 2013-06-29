@@ -1,7 +1,9 @@
 Welcome to the WebShop project.
 
 The WebShop project is meant for learning practices only.
-It is a Java project based on Mod4j, Spring, Hibernate and Maven.
+It is a Java project based on Mod4j, Spring, Hibernate.
+
+You can build this project by using Gradle but also with Maven.
 
 Regards,
 Johan.
