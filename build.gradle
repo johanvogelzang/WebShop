@@ -1,18 +1,6 @@
 allprojects  {
 	apply plugin: 'maven'
 	apply plugin: 'eclipse'
-	
-	uploadArchives {
-		repositories {
-			mavenDeployer {
-				def userHome = System.getProperty('user.home')
-				repository(url: "file:$userHome/tmp/releases") {
-				}
-				snapshotRepository(url: "file:$userHome/tmp/snapshots") {
-				}
-			}
-		}
-	}
 }
 
 subprojects {
@@ -27,14 +15,28 @@ subprojects {
 			} }
 	}
 
+	
 }
 
 buildscript {
 	repositories { mavenCentral() }
 	dependencies { classpath 'com.github.townsfolk:gradle-release:1.2' }
 }
+
 apply plugin: 'release'
 createReleaseTag.dependsOn uploadArchives
+
+uploadArchives {
+	repositories {
+		mavenDeployer {
+			def userHome = System.getProperty('user.home')
+			repository(url: "file:$userHome/tmp/releases") {
+			}
+			snapshotRepository(url: "file:$userHome/tmp/snapshots") {
+			}
+		}
+	}
+}
 
 // Gradle's alternative for Maven's <dependencyManagement>
 ext.libraries = [
