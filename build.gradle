@@ -34,6 +34,7 @@ buildscript {
 }
 
 apply plugin: 'release'
+createReleaseTag.dependsOn uploadArchives
 
 // Gradle's alternative for Maven's <dependencyManagement>
 ext.libraries = [
