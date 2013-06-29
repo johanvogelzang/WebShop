@@ -1,6 +1,18 @@
 allprojects  {
 	apply plugin: 'maven'
 	apply plugin: 'eclipse'
+	
+	uploadArchives {
+		repositories {
+			mavenDeployer {
+				def userHome = System.getProperty('user.home')
+				repository(url: "file:$userHome/tmp/releases") {
+				}
+				snapshotRepository(url: "file:$userHome/tmp/snapshots") {
+				}
+			}
+		}
+	}
 }
 
 subprojects {
@@ -15,17 +27,6 @@ subprojects {
 			} }
 	}
 
-	uploadArchives {
-		repositories {
-			mavenDeployer {
-				def userHome = System.getProperty('user.home')
-				repository(url: "file:$userHome/tmp/releases") {
-				}
-				snapshotRepository(url: "file:$userHome/tmp/snapshots") {
-				}
-			}
-		}
-	}
 }
 
 buildscript {
