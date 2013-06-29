@@ -5,15 +5,16 @@ allprojects  {
 
 subprojects {
 	apply plugin: 'java'
-	sourceCompatibility = 1.5
-	targetCompatibility = 1.5
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
 
 	repositories { mavenRepo url: "http://repo.maven.apache.org/maven2" }
 
 	sourceSets {
-		main { java { srcDirs "generated-sources" } }
+		main { java { srcDirs "generated-sources"
+			} }
 	}
-	
+
 	uploadArchives {
 		repositories {
 			mavenDeployer {
@@ -28,13 +29,10 @@ subprojects {
 }
 
 buildscript {
-   repositories {
-      mavenCentral()
-   }
-   dependencies {
-      classpath 'com.github.townsfolk:gradle-release:1.2'
-   }
+	repositories { mavenCentral() }
+	dependencies { classpath 'com.github.townsfolk:gradle-release:1.2' }
 }
+
 apply plugin: 'release'
 
 // Gradle's alternative for Maven's <dependencyManagement>
@@ -59,8 +57,8 @@ task dependenciesPng() {
 		subprojects.each {subproject ->
 			subproject.configurations.compile.dependencies.each {dependency ->
 				//if(dependency instanceof ProjectDependency) {
-					dotGraph += "\"$subproject.name\" -> \"$dependency.name\";"
-					dotGraph += "\"$subproject.name\" [color=purple];"
+				dotGraph += "\"$subproject.name\" -> \"$dependency.name\";"
+				dotGraph += "\"$subproject.name\" [color=purple];"
 				//}
 			}
 		}
