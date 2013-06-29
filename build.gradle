@@ -34,7 +34,7 @@ buildscript {
 }
 
 apply plugin: 'release'
-createReleaseTag.dependsOn uploadArchives
+createReleaseTag.dependsOn subprojects.uploadArchives
 
 
 // Gradle's alternative for Maven's <dependencyManagement>
