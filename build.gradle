@@ -32,7 +32,6 @@ buildscript {
 	repositories { mavenCentral() }
 	dependencies { classpath 'com.github.townsfolk:gradle-release:1.2' }
 }
-
 apply plugin: 'release'
 createReleaseTag.dependsOn uploadArchives
 
