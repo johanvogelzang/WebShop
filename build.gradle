@@ -1,8 +1,6 @@
 allprojects  {
 	apply plugin: 'maven'
 	apply plugin: 'eclipse'
-	group = 'org.company.webshop'
-	//'version' moved to gradle.properties.
 }
 
 subprojects {
