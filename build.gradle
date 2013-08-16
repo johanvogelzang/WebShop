@@ -35,7 +35,7 @@ buildscript {
 
 apply plugin: 'release'
 createReleaseTag.dependsOn subprojects.uploadArchives
-
+//Use this property on CI server: -Pgradle.release.useAutomaticVersion=true
 
 // Gradle's alternative for Maven's <dependencyManagement>
 ext.libraries = [
